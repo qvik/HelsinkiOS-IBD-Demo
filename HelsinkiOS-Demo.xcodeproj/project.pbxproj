@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		282F82351BB914110028DFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F82341BB914110028DFD0 /* AppDelegate.swift */; };
+		282F82371BB914110028DFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F82361BB914110028DFD0 /* ViewController.swift */; };
+		282F823A1BB914110028DFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282F82381BB914110028DFD0 /* Main.storyboard */; };
+		282F823C1BB914110028DFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282F823B1BB914110028DFD0 /* Assets.xcassets */; };
+		282F823F1BB914110028DFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282F823D1BB914110028DFD0 /* LaunchScreen.storyboard */; };
+		282F824A1BB914110028DFD0 /* HelsinkiOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F82491BB914110028DFD0 /* HelsinkiOS_DemoTests.swift */; };
+		282F82551BB914110028DFD0 /* HelsinkiOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F82541BB914110028DFD0 /* HelsinkiOS_DemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		282F82461BB914110028DFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 282F82291BB914110028DFD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 282F82301BB914110028DFD0;
+			remoteInfo = "HelsinkiOS-Demo";
+		};
+		282F82511BB914110028DFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 282F82291BB914110028DFD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 282F82301BB914110028DFD0;
+			remoteInfo = "HelsinkiOS-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		282F82311BB914110028DFD0 /* HelsinkiOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelsinkiOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282F82341BB914110028DFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		282F82361BB914110028DFD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		282F82391BB914110028DFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		282F823B1BB914110028DFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		282F823E1BB914110028DFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		282F82401BB914110028DFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		282F82451BB914110028DFD0 /* HelsinkiOS-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HelsinkiOS-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282F82491BB914110028DFD0 /* HelsinkiOS_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelsinkiOS_DemoTests.swift; sourceTree = "<group>"; };
+		282F824B1BB914110028DFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		282F82501BB914110028DFD0 /* HelsinkiOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HelsinkiOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282F82541BB914110028DFD0 /* HelsinkiOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelsinkiOS_DemoUITests.swift; sourceTree = "<group>"; };
+		282F82561BB914110028DFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		282F822E1BB914110028DFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F82421BB914110028DFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F824D1BB914110028DFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282F82281BB914110028DFD0 = {
+			isa = PBXGroup;
+			children = (
+				282F82331BB914110028DFD0 /* HelsinkiOS-Demo */,
+				282F82481BB914110028DFD0 /* HelsinkiOS-DemoTests */,
+				282F82531BB914110028DFD0 /* HelsinkiOS-DemoUITests */,
+				282F82321BB914110028DFD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		282F82321BB914110028DFD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				282F82311BB914110028DFD0 /* HelsinkiOS-Demo.app */,
+				282F82451BB914110028DFD0 /* HelsinkiOS-DemoTests.xctest */,
+				282F82501BB914110028DFD0 /* HelsinkiOS-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		282F82331BB914110028DFD0 /* HelsinkiOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				282F82341BB914110028DFD0 /* AppDelegate.swift */,
+				282F82361BB914110028DFD0 /* ViewController.swift */,
+				282F82381BB914110028DFD0 /* Main.storyboard */,
+				282F823B1BB914110028DFD0 /* Assets.xcassets */,
+				282F823D1BB914110028DFD0 /* LaunchScreen.storyboard */,
+				282F82401BB914110028DFD0 /* Info.plist */,
+			);
+			path = "HelsinkiOS-Demo";
+			sourceTree = "<group>";
+		};
+		282F82481BB914110028DFD0 /* HelsinkiOS-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				282F82491BB914110028DFD0 /* HelsinkiOS_DemoTests.swift */,
+				282F824B1BB914110028DFD0 /* Info.plist */,
+			);
+			path = "HelsinkiOS-DemoTests";
+			sourceTree = "<group>";
+		};
+		282F82531BB914110028DFD0 /* HelsinkiOS-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				282F82541BB914110028DFD0 /* HelsinkiOS_DemoUITests.swift */,
+				282F82561BB914110028DFD0 /* Info.plist */,
+			);
+			path = "HelsinkiOS-DemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		282F82301BB914110028DFD0 /* HelsinkiOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282F82591BB914110028DFD0 /* Build configuration list for PBXNativeTarget "HelsinkiOS-Demo" */;
+			buildPhases = (
+				282F822D1BB914110028DFD0 /* Sources */,
+				282F822E1BB914110028DFD0 /* Frameworks */,
+				282F822F1BB914110028DFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HelsinkiOS-Demo";
+			productName = "HelsinkiOS-Demo";
+			productReference = 282F82311BB914110028DFD0 /* HelsinkiOS-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		282F82441BB914110028DFD0 /* HelsinkiOS-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282F825C1BB914110028DFD0 /* Build configuration list for PBXNativeTarget "HelsinkiOS-DemoTests" */;
+			buildPhases = (
+				282F82411BB914110028DFD0 /* Sources */,
+				282F82421BB914110028DFD0 /* Frameworks */,
+				282F82431BB914110028DFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				282F82471BB914110028DFD0 /* PBXTargetDependency */,
+			);
+			name = "HelsinkiOS-DemoTests";
+			productName = "HelsinkiOS-DemoTests";
+			productReference = 282F82451BB914110028DFD0 /* HelsinkiOS-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		282F824F1BB914110028DFD0 /* HelsinkiOS-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282F825F1BB914110028DFD0 /* Build configuration list for PBXNativeTarget "HelsinkiOS-DemoUITests" */;
+			buildPhases = (
+				282F824C1BB914110028DFD0 /* Sources */,
+				282F824D1BB914110028DFD0 /* Frameworks */,
+				282F824E1BB914110028DFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				282F82521BB914110028DFD0 /* PBXTargetDependency */,
+			);
+			name = "HelsinkiOS-DemoUITests";
+			productName = "HelsinkiOS-DemoUITests";
+			productReference = 282F82501BB914110028DFD0 /* HelsinkiOS-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		282F82291BB914110028DFD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Qvik;
+				TargetAttributes = {
+					282F82301BB914110028DFD0 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					282F82441BB914110028DFD0 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 282F82301BB914110028DFD0;
+					};
+					282F824F1BB914110028DFD0 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 282F82301BB914110028DFD0;
+					};
+				};
+			};
+			buildConfigurationList = 282F822C1BB914110028DFD0 /* Build configuration list for PBXProject "HelsinkiOS-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 282F82281BB914110028DFD0;
+			productRefGroup = 282F82321BB914110028DFD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				282F82301BB914110028DFD0 /* HelsinkiOS-Demo */,
+				282F82441BB914110028DFD0 /* HelsinkiOS-DemoTests */,
+				282F824F1BB914110028DFD0 /* HelsinkiOS-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		282F822F1BB914110028DFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282F823F1BB914110028DFD0 /* LaunchScreen.storyboard in Resources */,
+				282F823C1BB914110028DFD0 /* Assets.xcassets in Resources */,
+				282F823A1BB914110028DFD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F82431BB914110028DFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F824E1BB914110028DFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		282F822D1BB914110028DFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282F82371BB914110028DFD0 /* ViewController.swift in Sources */,
+				282F82351BB914110028DFD0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F82411BB914110028DFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282F824A1BB914110028DFD0 /* HelsinkiOS_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282F824C1BB914110028DFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282F82551BB914110028DFD0 /* HelsinkiOS_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		282F82471BB914110028DFD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 282F82301BB914110028DFD0 /* HelsinkiOS-Demo */;
+			targetProxy = 282F82461BB914110028DFD0 /* PBXContainerItemProxy */;
+		};
+		282F82521BB914110028DFD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 282F82301BB914110028DFD0 /* HelsinkiOS-Demo */;
+			targetProxy = 282F82511BB914110028DFD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		282F82381BB914110028DFD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				282F82391BB914110028DFD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		282F823D1BB914110028DFD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				282F823E1BB914110028DFD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		282F82571BB914110028DFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		282F82581BB914110028DFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		282F825A1BB914110028DFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HelsinkiOS-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.qvik.HelsinkiOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		282F825B1BB914110028DFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HelsinkiOS-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.qvik.HelsinkiOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		282F825D1BB914110028DFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HelsinkiOS-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.qvik.HelsinkiOS-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelsinkiOS-Demo.app/HelsinkiOS-Demo";
+			};
+			name = Debug;
+		};
+		282F825E1BB914110028DFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HelsinkiOS-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.qvik.HelsinkiOS-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelsinkiOS-Demo.app/HelsinkiOS-Demo";
+			};
+			name = Release;
+		};
+		282F82601BB914110028DFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HelsinkiOS-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.qvik.HelsinkiOS-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HelsinkiOS-Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		282F82611BB914110028DFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HelsinkiOS-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.qvik.HelsinkiOS-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HelsinkiOS-Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		282F822C1BB914110028DFD0 /* Build configuration list for PBXProject "HelsinkiOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282F82571BB914110028DFD0 /* Debug */,
+				282F82581BB914110028DFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		282F82591BB914110028DFD0 /* Build configuration list for PBXNativeTarget "HelsinkiOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282F825A1BB914110028DFD0 /* Debug */,
+				282F825B1BB914110028DFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		282F825C1BB914110028DFD0 /* Build configuration list for PBXNativeTarget "HelsinkiOS-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282F825D1BB914110028DFD0 /* Debug */,
+				282F825E1BB914110028DFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		282F825F1BB914110028DFD0 /* Build configuration list for PBXNativeTarget "HelsinkiOS-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282F82601BB914110028DFD0 /* Debug */,
+				282F82611BB914110028DFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 282F82291BB914110028DFD0 /* Project object */;
+}
