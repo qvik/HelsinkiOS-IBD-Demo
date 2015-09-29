@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCell" id="qiB-Et-yYY" customClass="ArticleCell" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRK-gc-wFZ" customClass="ArticleMeta" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                        <rect key="frame" x="8" y="42" width="385" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="c7f-6D-bPa"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the Prawn Nebula, a Nursery for Newborn stars" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VF3-rP-a3w">
+                        <rect key="frame" x="8" y="8" width="385" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="wHU-Re-kgV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VF3-rP-a3w" firstAttribute="leading" secondItem="qiB-Et-yYY" secondAttribute="leading" constant="8" id="730-V9-QYP"/>
+                <constraint firstItem="VRK-gc-wFZ" firstAttribute="leading" secondItem="qiB-Et-yYY" secondAttribute="leading" constant="8" id="8hU-XM-lcC"/>
+                <constraint firstItem="VRK-gc-wFZ" firstAttribute="top" secondItem="qiB-Et-yYY" secondAttribute="top" constant="42" id="EqM-DJ-6yY"/>
+                <constraint firstAttribute="trailing" secondItem="VF3-rP-a3w" secondAttribute="trailing" constant="8" id="Nu3-1q-BIW"/>
+                <constraint firstAttribute="trailing" secondItem="VRK-gc-wFZ" secondAttribute="trailing" constant="8" id="bmm-x1-wPi"/>
+                <constraint firstItem="VF3-rP-a3w" firstAttribute="top" secondItem="qiB-Et-yYY" secondAttribute="top" constant="8" id="nh5-JZ-d5o"/>
+            </constraints>
+            <size key="customSize" width="401" height="90"/>
+            <connections>
+                <outlet property="metaView" destination="VRK-gc-wFZ" id="yEV-RZ-i1p"/>
+                <outlet property="titleLabel" destination="VF3-rP-a3w" id="e2k-RM-gVs"/>
+            </connections>
+            <point key="canvasLocation" x="356.5" y="218"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G1y-gD-aVX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Front Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FrontPageViewController" customModule="HelsinkiOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,282 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_ng" translatesAutoresizingMaskIntoConstraints="NO" id="N2V-fv-bb2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U4D-T3-pmo">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="IyS-TP-NIV">
+                                    <size key="itemSize" width="188" height="173"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V9w-xO-Boz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wHJ-tz-lmD"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-1y-FOA" customClass="LogoNavigationView" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="2yo-Nh-0TV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N2V-fv-bb2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="00n-Fs-c7G"/>
+                            <constraint firstItem="U4D-T3-pmo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0Nq-9S-oUm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U4D-T3-pmo" secondAttribute="trailing" constant="-20" id="2Tr-on-PuR"/>
+                            <constraint firstItem="U4D-T3-pmo" firstAttribute="top" secondItem="ICd-1y-FOA" secondAttribute="bottom" id="4Jm-0x-GiP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U4D-T3-pmo" secondAttribute="bottom" id="8Dk-gd-5Io"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ICd-1y-FOA" secondAttribute="trailing" constant="-20" id="8Ob-lz-hkX"/>
+                            <constraint firstItem="U4D-T3-pmo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="OJ7-Rp-X47"/>
+                            <constraint firstItem="N2V-fv-bb2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XHl-nm-MvS"/>
+                            <constraint firstItem="ICd-1y-FOA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Z2t-SL-pfE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U4D-T3-pmo" secondAttribute="bottom" id="aNF-rJ-eoY"/>
+                            <constraint firstItem="U4D-T3-pmo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cpw-Dh-Y8F"/>
+                            <constraint firstItem="N2V-fv-bb2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="drV-KA-HSx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U4D-T3-pmo" secondAttribute="trailing" id="foL-tR-BVx"/>
+                            <constraint firstItem="ICd-1y-FOA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jFY-kc-Tk0"/>
+                            <constraint firstAttribute="trailing" secondItem="N2V-fv-bb2" secondAttribute="trailing" id="lbY-8Z-TKw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Nq-9S-oUm"/>
+                                <exclude reference="cpw-Dh-Y8F"/>
+                                <exclude reference="foL-tR-BVx"/>
+                                <exclude reference="8Dk-gd-5Io"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="pAj-eW-4jL"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="appNavBar" destination="ICd-1y-FOA" id="rs0-Vw-LiV"/>
+                        <outlet property="collectionView" destination="U4D-T3-pmo" id="mE2-Wb-kJ6"/>
+                        <segue destination="Urw-J7-NwB" kind="show" identifier="toArticleList" id="aQH-di-mMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="559" y="538"/>
+        </scene>
+        <!--Article List View Controller-->
+        <scene sceneID="fLj-sT-Qpt">
+            <objects>
+                <viewController id="Urw-J7-NwB" customClass="ArticleListViewController" customModule="HelsinkiOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uz0-ld-stk"/>
+                        <viewControllerLayoutGuide type="bottom" id="N3K-Rh-svG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ws3-pp-4Ti">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_ng" translatesAutoresizingMaskIntoConstraints="NO" id="IHj-UM-h6P">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US3-f0-ZFW" customClass="ArticleListHeader" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="292"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="292" id="94l-69-uNg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="Travel"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="following" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5mI-tY-Uah" customClass="LogoNavigationView" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Oia-et-GtK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showBackButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="Travel"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Qo-XI-k9d">
+                                <rect key="frame" x="0.0" y="291" width="600" height="309"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="36C-6U-d7M">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Urw-J7-NwB" id="sbg-kc-Nec"/>
+                                    <outlet property="delegate" destination="Urw-J7-NwB" id="vkr-hL-iCn"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Qo-XI-k9d" firstAttribute="leading" secondItem="Ws3-pp-4Ti" secondAttribute="leadingMargin" constant="-20" id="2DX-Ef-Mnl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5mI-tY-Uah" secondAttribute="trailing" constant="-20" id="6X7-L9-lGs"/>
+                            <constraint firstItem="IHj-UM-h6P" firstAttribute="top" secondItem="Ws3-pp-4Ti" secondAttribute="topMargin" id="97R-OZ-c2p"/>
+                            <constraint firstItem="US3-f0-ZFW" firstAttribute="leading" secondItem="Ws3-pp-4Ti" secondAttribute="leadingMargin" constant="-20" id="9g4-qd-pZk"/>
+                            <constraint firstItem="5mI-tY-Uah" firstAttribute="leading" secondItem="Ws3-pp-4Ti" secondAttribute="leadingMargin" constant="-20" id="BAN-Yf-Zpj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Qo-XI-k9d" secondAttribute="trailing" constant="-20" id="FJU-xq-s1F"/>
+                            <constraint firstItem="IHj-UM-h6P" firstAttribute="leading" secondItem="Ws3-pp-4Ti" secondAttribute="leadingMargin" constant="-20" id="FMY-Dr-DZM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IHj-UM-h6P" secondAttribute="trailing" constant="-20" id="KAB-Fy-3le"/>
+                            <constraint firstItem="5Qo-XI-k9d" firstAttribute="top" secondItem="US3-f0-ZFW" secondAttribute="bottom" constant="-1" id="PRo-eh-Bzq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="US3-f0-ZFW" secondAttribute="trailing" constant="-20" id="SoJ-ew-ZE6"/>
+                            <constraint firstItem="N3K-Rh-svG" firstAttribute="top" secondItem="IHj-UM-h6P" secondAttribute="bottom" id="YuN-6d-itQ"/>
+                            <constraint firstItem="5mI-tY-Uah" firstAttribute="top" secondItem="Ws3-pp-4Ti" secondAttribute="topMargin" id="f13-Em-vg6"/>
+                            <constraint firstItem="N3K-Rh-svG" firstAttribute="top" secondItem="5Qo-XI-k9d" secondAttribute="bottom" id="rV6-Ic-5BK"/>
+                            <constraint firstItem="US3-f0-ZFW" firstAttribute="top" secondItem="Ws3-pp-4Ti" secondAttribute="topMargin" id="wUD-Vs-7ez"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appNavBar" destination="5mI-tY-Uah" id="JIc-QZ-93w"/>
+                        <outlet property="collectionView" destination="5Qo-XI-k9d" id="ZuK-PA-5hl"/>
+                        <outlet property="headerView" destination="US3-f0-ZFW" id="vxJ-3U-PKf"/>
+                        <segue destination="sMd-pw-SSL" kind="show" identifier="toArticleDetails" id="gfL-5Y-cAI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLg-2Y-ceE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="538"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="EB4-Hr-g0I">
+            <objects>
+                <viewController id="sMd-pw-SSL" customClass="ArticleViewController" customModule="HelsinkiOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sGF-pi-i4B"/>
+                        <viewControllerLayoutGuide type="bottom" id="8X0-m8-84u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fpj-D2-KxT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpe-c8-PnS" customClass="LogoNavigationView" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="KsT-Rf-mix"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showBackButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showBackAsClose" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_article_header" translatesAutoresizingMaskIntoConstraints="NO" id="ZeQ-3A-nTK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="zA7-X9-oWr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ro-kt-KMS">
+                                <rect key="frame" x="20" y="308" width="560" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Eff-s9-4oq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-lB-p8G" customClass="ArticleMeta" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="389" width="560" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="jz9-ku-D7F"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showCategory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06Z-aa-p42" customClass="StarRatingView" customModule="HelsinkiOS_Demo" customModuleProvider="target">
+                                <rect key="frame" x="175" y="442" width="251" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="3F1-PU-8rL"/>
+                                    <constraint firstAttribute="height" constant="35" id="bxV-jp-dhr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="star_empty"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="star_full"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="minImageSize">
+                                        <size key="value" width="15" height="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dpe-c8-PnS" firstAttribute="top" secondItem="fpj-D2-KxT" secondAttribute="topMargin" id="AyX-cY-y0D"/>
+                            <constraint firstItem="6Ro-kt-KMS" firstAttribute="leading" secondItem="fpj-D2-KxT" secondAttribute="leadingMargin" id="E5K-gc-L9W"/>
+                            <constraint firstItem="ZeQ-3A-nTK" firstAttribute="leading" secondItem="fpj-D2-KxT" secondAttribute="leadingMargin" constant="-20" id="E9y-F9-PiR"/>
+                            <constraint firstItem="ZeQ-3A-nTK" firstAttribute="top" secondItem="Dpe-c8-PnS" secondAttribute="bottom" id="KDA-yg-sGd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="06Z-aa-p42" secondAttribute="trailing" constant="154" id="LwC-Ws-Zoz"/>
+                            <constraint firstItem="K2i-lB-p8G" firstAttribute="leading" secondItem="fpj-D2-KxT" secondAttribute="leadingMargin" id="VIG-Nh-xj5"/>
+                            <constraint firstItem="06Z-aa-p42" firstAttribute="top" secondItem="K2i-lB-p8G" secondAttribute="bottom" constant="8" id="Yot-gS-xdq"/>
+                            <constraint firstItem="6Ro-kt-KMS" firstAttribute="trailing" secondItem="fpj-D2-KxT" secondAttribute="trailingMargin" id="ZKR-Rj-uue"/>
+                            <constraint firstItem="06Z-aa-p42" firstAttribute="leading" secondItem="fpj-D2-KxT" secondAttribute="leadingMargin" constant="155" id="awd-LW-WkD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZeQ-3A-nTK" secondAttribute="trailing" constant="-20" id="cz0-b2-a9A"/>
+                            <constraint firstItem="K2i-lB-p8G" firstAttribute="top" secondItem="ZeQ-3A-nTK" secondAttribute="bottom" id="dXB-xx-fFf"/>
+                            <constraint firstItem="Dpe-c8-PnS" firstAttribute="leading" secondItem="fpj-D2-KxT" secondAttribute="leadingMargin" constant="-20" id="fJp-mv-OJg"/>
+                            <constraint firstItem="K2i-lB-p8G" firstAttribute="trailing" secondItem="fpj-D2-KxT" secondAttribute="trailingMargin" id="jwu-6Y-fTJ"/>
+                            <constraint firstItem="6Ro-kt-KMS" firstAttribute="top" secondItem="Dpe-c8-PnS" secondAttribute="bottom" constant="244" id="sRi-cG-T5z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dpe-c8-PnS" secondAttribute="trailing" constant="-20" id="t79-fy-bbD"/>
+                            <constraint firstItem="06Z-aa-p42" firstAttribute="centerX" secondItem="fpj-D2-KxT" secondAttribute="centerX" id="xvQ-Rz-O3C"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LwC-Ws-Zoz"/>
+                                <exclude reference="awd-LW-WkD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="appNavBar" destination="Dpe-c8-PnS" id="aZ9-E3-U7Z"/>
+                        <outlet property="metaView" destination="K2i-lB-p8G" id="fVF-vb-H14"/>
+                        <outlet property="titleLabel" destination="6Ro-kt-KMS" id="FMu-lD-eEU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hk-wf-u1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938" y="538"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PWz-ux-yu2">
+            <objects>
+                <navigationController id="G1y-gD-aVX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xI2-0E-wvd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nwD-f3-kyj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLP-Ui-asS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274" y="538"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_article_header" width="375" height="325"/>
+        <image name="main_ng" width="375" height="667"/>
+        <image name="star_empty" width="34" height="32"/>
+        <image name="star_full" width="34" height="32"/>
+    </resources>
 </document>
