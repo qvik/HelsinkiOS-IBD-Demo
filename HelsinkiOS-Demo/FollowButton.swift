@@ -8,18 +8,15 @@
 
 import UIKit
 
-@IBDesignable
-class FollowButton: UIButton {
+@IBDesignable class FollowButton: UIButton {
     
-    @IBInspectable
-    var fillColor: UIColor = UIColor.appPink() {
+    @IBInspectable var fillColor: UIColor = UIColor.appPink() {
         didSet {
             setupView()
         }
     }
     
-    @IBInspectable
-    var following: Bool = false {
+    @IBInspectable var following: Bool = false {
         didSet {
             setupView()
         }

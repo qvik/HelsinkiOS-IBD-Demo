@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-public class BaseNavigationView: UIView {
+@IBDesignable public class BaseNavigationView: UIView {
     
     @IBOutlet weak var backButton: UIButton!
     
@@ -56,10 +55,6 @@ public class BaseNavigationView: UIView {
         
         self.initView()
     }
-    
-//    override public func prepareForInterfaceBuilder() {
-//        self.initView()
-//    }
     
     func initView() {
         let xibName = getXibName()

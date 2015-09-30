@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class ArticleMeta: DesignableXib {
+@IBDesignable class ArticleMeta: DesignableXib {
     
     @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!

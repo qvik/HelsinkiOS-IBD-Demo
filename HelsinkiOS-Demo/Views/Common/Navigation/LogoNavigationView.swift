@@ -16,8 +16,7 @@ public class LogoNavigationView: BaseNavigationView {
     
     // MARK : Inspectables
     
-    @IBInspectable
-    public var fillColor: UIColor = UIColor.appPurple() {
+    @IBInspectable public var fillColor: UIColor = UIColor.appPurple() {
         didSet {
             if let backgroundImage = self.backgroundImage {
                 setBackgroundWithColorFill(image: backgroundImage, color: fillColor)
@@ -27,25 +26,22 @@ public class LogoNavigationView: BaseNavigationView {
         }
     }
     
-    @IBInspectable
-    public var category: String? {
+    @IBInspectable public var category: String? {
         didSet {
             let bundle = NSBundle(forClass: self.dynamicType)
             self.backgroundImage = UIImage(named: "Thumbnail_channel_\(category!)", inBundle: bundle, compatibleWithTraitCollection: self.traitCollection)
         }
     }
     
-    //@IBInspectable
-    public var backgroundImage: UIImage? {
+    @IBInspectable public var showBackAsClose: Bool = false {
         didSet {
-            setBackgroundWithColorFill(image: backgroundImage!, color: self.fillColor)
+            setupView()
         }
     }
     
-    @IBInspectable
-    public var showBackAsClose: Bool = false {
+    public var backgroundImage: UIImage? {
         didSet {
-            setupView()
+            setBackgroundWithColorFill(image: backgroundImage!, color: self.fillColor)
         }
     }
     
@@ -78,7 +74,6 @@ public class LogoNavigationView: BaseNavigationView {
         let navBackgroundImage: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        //backgroundImageView.contentMode = UIViewContentMode.ScaleAspectFill
         backgroundImageView.clipsToBounds = true
         
         backgroundImageView.frame = CGRectMake(0, 0, frame.size.width, heigth)

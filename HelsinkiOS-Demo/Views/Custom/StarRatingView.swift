@@ -11,8 +11,7 @@ import UIKit
 /**
 * A simple star rating view that shows set value with animation
 */
-@IBDesignable
-class StarRatingView: UIView {
+@IBDesignable class StarRatingView: UIView {
     // MARK: Rating View properties
     
     /**

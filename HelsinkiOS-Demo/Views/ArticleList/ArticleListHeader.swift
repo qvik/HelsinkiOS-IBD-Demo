@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class ArticleListHeader: DesignableXib {
+@IBDesignable class ArticleListHeader: DesignableXib {
     
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!

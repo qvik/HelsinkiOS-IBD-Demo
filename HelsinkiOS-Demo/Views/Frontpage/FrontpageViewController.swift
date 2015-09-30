@@ -13,7 +13,7 @@ class FrontPageViewController: BaseViewController, UICollectionViewDataSource, U
     
     var cellHeight : CGFloat {
         get {
-            return 143//(view.frame.width / 320) * 173
+            return 143
         }
     }
     var parallax : CGFloat {
@@ -57,44 +57,14 @@ class FrontPageViewController: BaseViewController, UICollectionViewDataSource, U
         }
     }
     
-//    @IBAction func returnFromSegueActions(sender: UIStoryboardSegue) {
-//    }
-//    
-//    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
-//        if let id = identifier {
-//            if id == "idArticleListSegueUnwind" {
-//                let unwindSegue = ArticleListUnwindSegue(identifier: id, source: fromViewController, destination: toViewController, performHandler: { () -> Void in
-//                    
-//                })
-//                return unwindSegue
-//            }
-//        }
-//        
-//        return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)!
-//    }
-    
     // MARK: NavigationBar overrides
     
     override func navigationBarWillAppear(animated: Bool) {
         super.navigationBarWillAppear(animated)
-//        if animated {
-//            UIView.animateWithDuration(0.4, animations: { () -> Void in
-//                appNavBar?.alpha = 1.0
-//            })
-//        } else {
-//            appNavBar?.alpha = 1.0
-//        }
     }
     
     override func navigationBarWillDisappear(animated: Bool) {
         super.navigationBarWillDisappear(animated)
-//        if animated {
-//            UIView.animateWithDuration(0.4, animations: { () -> Void in
-//                appNavBar?.alpha = 0.5
-//            })
-//        } else {
-//            appNavBar?.alpha = 0.5
-//        }
     }
     
     // MARK: UIScrollViewDelegate
@@ -135,7 +105,6 @@ class FrontPageViewController: BaseViewController, UICollectionViewDataSource, U
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
         return CGSize(width: collectionView.frame.width, height: cellHeight)
-        //return CategoryCell.preferredSizeForWidth(collectionView.frame.width / 2)
     }
     
     // MARK: - Lifecycle

@@ -23,10 +23,6 @@ class ArticleListViewController: BaseViewController, UICollectionViewDataSource,
     var category: String?
     var articles = [Article]()
     
-//    override func backTapped(sender: AnyObject?) {
-//        performSegueWithIdentifier("idArticleListSegueUnwind", sender: sender)
-//    }
-    
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -87,9 +83,7 @@ class ArticleListViewController: BaseViewController, UICollectionViewDataSource,
             appNavBar.category = category
         }
         headerView.category = category!
-//        category.category = category!.uppercaseString
 
-//        categoryImage.image = UIImage(named: "Thumbnail_channel_\(category!)")
         super.viewDidLoad()
     }
 }
