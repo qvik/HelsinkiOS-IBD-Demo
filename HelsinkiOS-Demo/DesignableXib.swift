@@ -40,10 +40,6 @@ class DesignableXib: UIView {
         self.loadXibAndInit()
     }
     
-    override func prepareForInterfaceBuilder() {
-        self.loadXibAndInit()
-    }
-    
     func loadXibAndInit() {
         let xibName = getXibName()
         
